@@ -7,6 +7,7 @@ public class MasterMindGame {
         displayScreen();
         while (mGame.isProgress()){
             System.out.print("Enter Your Guess : ");
+            /* ========================= E ======================*/
             String answer = "";
             while(true){
                 answer = acceptNumber();
@@ -26,6 +27,7 @@ public class MasterMindGame {
             }
             Answer ans = new Answer(answer);
             mGame.evaluateResult(ans);
+            /* ========================= E ======================*/
             System.out.print(mGame.getResult()+"\n");
         }
         if (mGame.isWon())
