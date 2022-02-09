@@ -23,7 +23,7 @@ public class MasterMind {
 
     public MasterMind() {
         gameState = State.PROGRESS;
-        hiddenNumber = "4567";
+        hiddenNumber = this.generateHiddenNumber();
         maxAllowTime = defaultmaxAllowTime;
         for(int i=1;i<= QUIZZ_LENGTH;i++){
             correctAnswer = correctAnswer + allCorrect;
