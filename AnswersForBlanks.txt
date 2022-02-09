@@ -1,0 +1,31 @@
+Author: Nguyễn Văn Quân - OJT203
+
+
+
+A: Answer ans = this.attemptList.get(this.attemptList.size() - 1);
+
+B: ans.getAnswer()!=null
+
+C: matchResult(paraAttmpt.getAnswer()).equals(correctAnswer) 
+
+D: inChar[i]==hidChar[j]
+
+E: String answer = "";
+            while(true){
+                answer = acceptNumber();
+                if(answer.length() != 4){
+                    System.out.println("You must enter all 4 numeric characters!");
+                }
+                else{
+                    try {
+                        Integer.parseInt(answer);
+                        break;
+                    }
+                    catch (NumberFormatException ex){
+                        System.out.println("You must enter all 4 numeric characters!");
+                    }
+                }
+                System.out.print("Enter Your Guess : ");
+            }
+            Answer ans = new Answer(answer);
+            mGame.evaluateResult(ans);
